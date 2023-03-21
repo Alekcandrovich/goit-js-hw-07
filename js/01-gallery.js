@@ -39,7 +39,7 @@ function createGallery(images) {
     })
     .join('');
 }
-gallery.innerHTML = createGallery(galleryItems);
+gallery.insertAdjacentHTML('beforeend', createGallery(galleryItems));
 
 gallery.addEventListener('click', e => {
   e.preventDefault();

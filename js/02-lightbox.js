@@ -18,7 +18,7 @@ function createGallery(images) {
     })
     .join('');
 }
-gallery.innerHTML = createGallery(galleryItems);
+gallery.insertAdjacentHTML('beforeend', createGallery(galleryItems));
 
 const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
